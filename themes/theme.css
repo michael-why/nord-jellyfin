@@ -4,11 +4,6 @@
 
 @import "node_modules/nord/src/nord.css";
 
-body {
-  background-color: var(--nord0);
-  color: var(--nord8);
-}
-
 
  * {
   scrollbar-color: var(--nord3) var(--nord0);
