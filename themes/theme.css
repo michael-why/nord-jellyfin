@@ -1,13 +1,22 @@
-/**
- * Catppuccin for Jellyfin
- * Copyright (c) 2021 Catppuccin
- * Licensed under the MIT License
- * https://github.com/catppuccin/jellyfin/blob/main/LICENSE
- */
 
-* {
-  scrollbar-color: var(--hover-background) var(--second-background);
+
+
+
+@import "node_modules/nord/src/nord.css";
+
+body {
+  background-color: var(--nord0);
+  color: var(--nord8);
 }
+
+
+ * {
+  scrollbar-color: var(--nord3) var(--nord0);
+}
+
+
+
+
 
 .inputLabelFocused,
 .selectLabelFocused,
@@ -22,7 +31,7 @@
 .headerLeft,
 .button-link,
 .upNextDialog-countdownText {
-  color: var(--main-color);
+  color: var(--nord15);
 }
 
 .buttonActive,
@@ -31,55 +40,55 @@
 .layout-tv .paper-icon-button-light.show-focus:focus,
 .mdl-radio.show-focus .mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__inner-circle,
 .mdl-radio.show-focus .mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__outer-circle {
-  color: var(--main-color) !important;
+  color: var(--nord15) !important;
 }
 
 .mdl-radio__focus-circle {
-  background: var(--main-color);
+  background: var(--nord15);
 }
 
 .layout-tv .emby-button:not(.emby-tab-button).show-focus:focus {
-  background: var(--main-color) !important;
+  background: var(--nord15) !important;
 }
 
 .iconOsdProgressInner,
 .mdl-slider-background-lower {
-  background-color: var(--main-color);
+  background-color: var(--nord15);
 }
 .mdl-slider::-moz-range-thumb {
-  background-color: var(--main-color);
+  background-color: var(--nord15);
 }
 .mdl-slider::-webkit-slider-thumb {
-  background-color: var(--main-color);
+  background-color: var(--nord15);
 }
 
 .itemProgressBar.playbackProgress .itemProgressBarForeground {
-  background-color: var(--main-color) !important;
+  background-color: var(--nord15) !important;
 }
 
 .emby-checkbox:focus:not(:checked) + span + .checkboxOutline,
 .mdl-spinner__layer,
 .itemSelectionPanel {
-  border-color: var(--main-color);
+  border-color: var(--nord15);
 }
 
 .emby-input:focus,
 .emby-textarea:focus,
 .emby-select-withcolor:focus {
-  border-color: var(--main-color) !important;
+  border-color: var(--nord15) !important;
 }
 
 .emby-checkbox:checked + span + .checkboxOutline,
 .itemProgressBarForeground {
-  color: var(--main-text);
-  background-color: var(--main-color);
-  border-color: var(--main-color);
+  color: var(--nord5);
+  background-color: var(--nord15);
+  border-color: var(--nord15);
 }
 
 .button-cancel,
 .button-cancel:focus {
-  color: var(--main-color);
-  background: var(--main-background);
+  color: var(--nord15);
+  background: var(--nord1);
 }
 
 .paper-icon-button-light:hover:not(:disabled),
@@ -88,19 +97,19 @@
 .listItem:focus,
 .navMenuOption:hover,
 .navMenuOption:focus {
-  color: var(--main-color) !important;
-  background-color: var(--hover-background) !important;
+  color: var(--nord15) !important;
+  background-color: var(--nord3) !important;
 }
 
 .selectionCommandsPanel > button > .material-icons,
 .checkboxOutline .checkboxIcon-checked {
-  color: var(--main-background);
+  color: var(--nord1);
 }
 
 .selectionCommandsPanel .itemSelectionCount,
 .layout-tv .emby-button:not(.emby-tab-button).show-focus:focus .listItem,
 .layout-tv .emby-button:not(.emby-tab-button).show-focus:focus .listItemBodyText {
-  color: var(--main-background) !important;
+  color: var(--nord1) !important;
 }
 
 .button-submit,
@@ -116,12 +125,12 @@
 .btnAddUser,
 .btnAddUser:focus,
 ::selection {
-  color: var(--main-background);
-  background: var(--main-color);
+  color: var(--nord1);
+  background: var(--nord15);
 }
 ::-moz-selection {
-  color: var(--main-background);
-  background: var(--main-color);
+  color: var(--nord1);
+  background: var(--nord15);
 }
 
 .indicator,
@@ -129,20 +138,20 @@
 .btnRefresh,
 .programCell:focus,
 div[data-role="controlgroup"] a.ui-btn-active {
-  color: var(--main-background) !important;
-  background-color: var(--main-color) !important;
+  color: var(--nord1) !important;
+  background-color: var(--nord15) !important;
 }
 
 #btnShutdown,
 #deviceDeleteAll,
 .btnDeleteImage,
 .btnResetPassword {
-  color: var(--main-background) !important;
-  background: var(--red-color) !important;
+  color: var(--nord1) !important;
+  background: var(--nord11) !important;
 }
 
 .playedIndicator {
-  color: var(--main-background);
+  color: var(--nord1);
   background-color: var(--green-color);
 }
 
@@ -150,44 +159,44 @@ div[data-role="controlgroup"] a.ui-btn-active {
 .mainDrawer,
 .cardBox,
 .paperList {
-  background: var(--main-background);
+  background: var(--nord1);
 }
 
 .emby-select-withcolor > option,
 .backgroundContainer,
 .nowPlayingPlaylist,
 .collapseContent {
-  background-color: var(--main-background);
+  background-color: var(--nord1);
 }
 
 .formDialogHeader,
 .dialog,
 .dashboardGeneralForm,
 html {
-  color: var(--main-text);
-  background-color: var(--main-background);
+  color: var(--nord5);
+  background-color: var(--nord1);
 }
 
 .detailRibbon,
 .backgroundContainer.withBackdrop {
-  background-color: var(--main-background-transparent);
+  background-color: #3b4252dd;
 }
 
 .devicesList .cardContent.defaultCardBackground,
 .cardContent.defaultCardBackground:has(.sessionNowPlayingContent) {
-  background-color: var(--dark-background) !important;
+  background-color: var(--nord0) !important;
 }
 
 .playlistSectionButton,
 .noBackdropTransparency .detailPagePrimaryContainer {
-  background: var(--second-background);
+  background: var(--nord0);
 }
 
 .emby-input,
 .emby-textarea,
 .emby-select {
-  background: var(--second-background);
-  border-color: var(--second-background);
+  background: var(--nord0);
+  border-color: var(--nord0);
 }
 
 .iconOsd,
@@ -196,7 +205,7 @@ html {
 .cardContent.defaultCardBackground,
 .cardContent .defaultCardBackground,
 .detailPageSecondaryContainer {
-  background-color: var(--second-background) !important;
+  background-color: var(--nord0) !important;
 }
 
 .sliderBubble,
@@ -204,24 +213,24 @@ html {
 .listItemIcon:not(.listItemIcon-transparent),
 .infoBanner,
 .nowPlayingBar {
-  color: var(--main-text);
-  background-color: var(--second-background) !important;
+  color: var(--nord5);
+  background-color: var(--nord0) !important;
 }
 
 div[data-role="controlgroup"] .emby-button,
 .fab,
 .toast,
 .raised {
-  color: var(--main-text) !important;
-  background-color: var(--second-background) !important;
+  color: var(--nord5) !important;
+  background-color: var(--nord0) !important;
 }
 
 .alphaPickerButton {
-  color: var(--hover-background);
+  color: var(--nord3);
 }
 
 .mediaInfoText {
-  background: var(--hover-background);
+  background: var(--nord3);
 }
 
 .iconOsdProgressOuter,
@@ -229,15 +238,15 @@ div[data-role="controlgroup"] .emby-button,
 .formDialogHeader:not(.formDialogHeader-clear),
 .formDialogFooter:not(.formDialogFooter-clear),
 .cardBox:not(.visualCardBox) .cardPadder {
-  background-color: var(--hover-background);
+  background-color: var(--nord3);
 }
 
 .itemProgressBar.backgroundProgress .itemProgressBarForeground {
-  background-color: var(--hover-background) !important;
+  background-color: var(--nord3) !important;
 }
 
 .listItem-border {
-  border-color: var(--hover-background) !important;
+  border-color: var(--nord3) !important;
 }
 
 .sectionTitle,
@@ -270,7 +279,7 @@ div[data-role="controlgroup"] .emby-button,
 .selectionCommandsPanel > button:hover > .material-icons,
 .paperListLabel,
 legend {
-  color: var(--main-text);
+  color: var(--nord5);
 }
 
 .mediaInfoOfficialRating,
@@ -279,24 +288,24 @@ legend {
 .listItemButton,
 .checkboxListLabel,
 .lnkMediaFolder {
-  color: var(--main-text) !important;
+  color: var(--nord5) !important;
 }
 
 .alphaPickerRow,
 .devices-subheader,
 .cardText-secondary,
 .nowPlayingBarSecondaryText {
-  color: var(--dimmer-text);
+  color: var(--nord4);
 }
 
 .fieldDescription,
 .alphaPickerButton-selected,
 .secondary {
-  color: var(--dimmer-text) !important;
+  color: var(--nord4) !important;
 }
 
 .mdl-slider-background-upper {
-  background-color: var(--dimmer-text);
+  background-color: var(--nord4);
 }
 
 .osdTextContainer,
@@ -307,22 +316,22 @@ legend {
 .sessionAppName,
 .sessionNowPlayingInfo,
 .sessionNowPlayingTime {
-  color: var(--white-text);
+  color: var(--nord6);
 }
 
 .playstatebutton-icon-played,
 .ratingbutton-icon-withrating {
-  color: var(--red-color);
+  color: var(--nord11);
 }
 
 .notification_important {
-  color: var(--red-color) !important;
+  color: var(--nord11) !important;
 }
 
 .notifications {
-  color: var(--blue-color) !important;
+  color: var(--nord7) !important;
 }
 
 .starIcon {
-  color: var(--yellow-color);
+  color: var(--nord13);
 }
